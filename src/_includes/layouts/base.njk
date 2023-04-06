@@ -4,8 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>{{ title }}</title>
-		<link rel="stylesheet" href="css/pico.min.css">
-    <link rel="stylesheet" href="css/custom.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="stylesheet" href="/css/pico.min.css">
+    <link rel="stylesheet" href="/css/custom.css">
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Code" rel="stylesheet">
 
 		<script async src="https://cdn.ampproject.org/v0.js"></script>
 
@@ -25,23 +27,23 @@
     	      </svg>
     	    </button>
     	    <ul>
-    	      <li><a href="./">Hjem</a></li>
-    	      <li><a href="#">Om oss</a></li>
+    	      <li><a href="/">Hjem</a></li>
+    	      <li><a href="/about">Om oss</a></li>
     	      <li><a href="#">Kontakt</a></li>
     	    </ul>
     	  </nav>
     	</aside>
 		</amp-sidebar>
-			<nav style="padding-left: 0.5% ;padding-right: 0.5%">
+			<nav class="navbar" style="padding-left: 0.5% ;padding-right: 0.5%">
 				<ul></ul>
   		  <ul>
 					<br>
-					<a href="https://areabygg.no" style="padding-top: 7%;">
-						<img src="images/area-bygg-logo.png" width="300px" alt="Area Bygg AS"></a>
+					<a href="/" style="padding-top: 7%;">
+						<img src="/images/area-bygg-logo.png" width="300px" alt="Area Bygg AS"></a>
   		  </ul>
   		  <ul>
   		    <li>
-  		      <button class="secondary" on="tap:sidebar.toggle" aria-label="Close menu">
+  		      <button class="navbar-button" on="tap:sidebar.toggle" aria-label="Close menu">
   		        <svg aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="16px" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
   		          <line x1="3" y1="6" x2="21" y2="6"></line>
   		          <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -51,7 +53,7 @@
   		    </li>
   		  </ul>
   		</nav>
-		<main class="container" style="padding-top: 5%;">
+	<main class="container" style="padding-bottom: 0%;">
 			{% block content %}{% endblock %}
 		</main>
 			{% include "layouts/footer.njk" %}
