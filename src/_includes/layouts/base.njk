@@ -7,8 +7,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="stylesheet" href="/css/pico.min.css">
     <link rel="stylesheet" href="/css/custom.css">
-		<link href="https://fonts.googleapis.com/css2?family=Fira+Code" rel="stylesheet">
-
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans" rel="stylesheet">
 		<script async src="https://cdn.ampproject.org/v0.js"></script>
 
 		<script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
@@ -30,6 +29,11 @@
     	      <li><a href="/">Hjem</a></li>
     	      <li><a href="/about">Om oss</a></li>
     	      <li><a href="#">Kontakt</a></li>
+						<br>
+						<div style="padding-right: 10%; text-align: end;">
+							<a href="https://www.instagram.com/areabygg/" class="secondary"><i class="fa fa-instagram ft28" aria-hidden="true" style="padding-right: 8px;"></i></a>
+							<a href="https://www.facebook.com/areabyggas/" class="secondary"><i class="fa fa-facebook ft28" aria-hidden="true"></i></a>
+						</div>
     	    </ul>
     	  </nav>
     	</aside>
@@ -38,8 +42,8 @@
 				<ul></ul>
   		  <ul>
 					<br>
-					<a href="/" style="padding-top: 7%;">
-						<img src="/images/area-bygg-logo.png" width="300px" alt="Area Bygg AS"></a>
+					<a href="/" style="padding-top: 4%;">
+						<img src="/images/area-bygg-logo.svg" width="300px" alt="Area Bygg AS"></a>
   		  </ul>
   		  <ul>
   		    <li>
@@ -53,7 +57,7 @@
   		    </li>
   		  </ul>
   		</nav>
-	<main class="container" style="padding-bottom: 0%;">
+	<main class="container" style="padding-bottom: 0%; margin-top: 5%; font-family: Fira Sans;">
 			{% block content %}{% endblock %}
 		</main>
 			{% include "layouts/footer.njk" %}

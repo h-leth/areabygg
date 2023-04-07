@@ -1,8 +1,10 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
-/*font-family: "firacode"
-*/
-.ft14 {
+.ft28 {
+font-size: 28px !important;
+}
+
+.ft40 {
 font-size: 40px !important;
 }
 
@@ -24,11 +26,6 @@ font-size: 40px !important;
 	background-color: #005587;
 	border-color: #005587;
 	--box-shadow: #005587
-}
-
-.main {
-	margin-top: 50px;
-	font-family: "Fira Code"
 }
 
 amp-boilerplate="">body {
@@ -66,7 +63,7 @@ to{visibility:visible}
 amp-sidebar {
 	position: relative;
 	padding: 1rem;
-	background-color: var(--primary);
+	background-color: var(--secondary);
 	box-shadow: var(--card-box-shadow)
 }
 
@@ -77,9 +74,14 @@ amp-sidebar button {
 	width: 1.5rem;height:1.5rem;
 	border-radius: 2rem;
 	line-height: 0.5;
-	background-color: var(--primary);
-	border-color: var(--primary);
+	background-color: var(--secondary);
+	border-color: var(--secondary);
 }
+
+amp-sidebar button:focus {
+	border-color: var(--secondary);
+	--box-shadow: var(--secondary)
+} 
 
 amp-sidebar aside {
 	min-width: 8rem;
@@ -87,7 +89,7 @@ amp-sidebar aside {
 }
 
 amp-sidebar a,amp-sidebar a:active,amp-sidebar a:focus,amp-sidebar a:hover,amp-sidebar h3 {
-	color: var(--primary-inverse);
+	color: var(--secondary-inverse);
 }
 
 amp-sidebar svg,body>nav svg{
