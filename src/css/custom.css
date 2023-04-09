@@ -14,7 +14,7 @@ font-size: 35px !important;
 	background-color: #005587;
 	top: 0;
 	width: 100%;
-	box-shadow: 0 15px 20px -2px rgba(0,0,0,.2)
+	box-shadow: 0 2px 15px 0px rgba(0,0,0,.2)
 }
 
 .navbar-button{
@@ -27,6 +27,37 @@ font-size: 35px !important;
 	border-color: #005587;
 	--box-shadow: #005587
 }
+
+@media screen and (max-width: 575px) {
+	.container{
+		margin-top: 50px 
+	}
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+	.container{
+		margin-top: 40px 
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	.container{
+		margin-top: 35px 
+	}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	.container{
+		margin-top: 25px 
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.container{
+		margin-top: 15px 
+	}
+}
+
 
 amp-boilerplate="">body {
 	-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
