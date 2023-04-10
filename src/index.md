@@ -1,7 +1,7 @@
 ---
 layout: 'layouts/home.njk'
 title: 'Area Bygg As'
-img: '/images/illustrasjon_sjuestokkveien18.jpg'
+img: '/images/illustrasjon_sjuestokkveien18.png'
 ---
 
 #### NYBYGG
