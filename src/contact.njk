@@ -1,0 +1,29 @@
+---
+layout: 'layouts/home.njk'
+title: 'Area Bygg As | Kontakt oss'
+---
+<article style="padding-top: 3%; margin-top: 0px; padding-bottom: 2%;">
+<form action="https://formspree.io/f/xknapole" method="POST" id="contact-form">
+	<div class="grid">
+		<label for="name">
+			Navn:
+			<input type="text" id="name" name="name" placeholder="Ola Normann" required>
+		</label>
+		<label for="Epost">
+			Epost adresse:
+			<input type="email" id="email" name="email" placeholder="din@epost.no" required>
+		</label>
+	</div>
+	<label for="description">Hva kan vi hjelpe deg med?</label>
+	<textarea type="text" id="description" name="description" placeholder="..." rows="10" required></textarea>
+	<button class="secondary" 
+		class="g-recaptcha" 
+    data-sitekey="6LdK8XElAAAAAA3hcsLHtQKzXR-l1T5Q3ST4H0wV" 
+    data-callback='onSubmit' 
+    data-action='submit'
+		type="submit" 
+		id="submit">
+		Send
+	</button>
+</form>
+</article>
